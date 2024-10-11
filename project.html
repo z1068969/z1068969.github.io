@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+   <meta HTTP-EQUIV="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+   <title>Project</title>
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   <link rel="stylesheet" type="text/css" href="project.css">
+   <script src="script.js" defer></script>
+   <script src="iconfont.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <!-- nav  -->
+    <header class="header">
+        <nav class="menu container">
+            <div class="logo left">
+               <h2><a href="#">logo</a></h2>
+            </div>
+
+            <div class="link right">
+                <ul>
+                   <li><a href="">HOME</a></li>
+                   <li><a href="">WORKS</a></li>
+                   <li><a href="">BLOG</a></li>
+                   <li><a href="">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   <section class="background">
+      <!-- here is the barkground image -->
+      <a id="scroll-btn" href="#ctn"></a>
+
+        <!-- word  -->
+        <div class="top-section">
+            <h1 class="header-1">Build Better Backends</h1>
+            <p>The only platform that gives AI the ability to autonomously build web services.</p>
+        </div>
+   </section>   
+
+
+   <section class="container">
+      <div class="other-section">
+<hr id="ctn">
+      <div style="height: 5rem;"></div>
+
+<h2>绝对定位 absolute</h2>
+1 宽高为auto，适应内容
+2 包含块 变化：找祖先中第一个定位元素（position取值非static），该元素的填充盒（padding-box）为其包含块。若找不到，则它的包含块为整个网页（初始化包含块）
+
+固定定位 fixed
+其他情况和绝对定位完全一样
+
+包含块 不同：固定为视口（浏览器的可视窗口）
+*应用：右下角弹窗广告，回到顶部按钮
+
+定位下的居中
+某个方向居中：
+1 定宽（高）
+2 将左右（上下）距离设置为0
+3 将左右（上下）margin设置为auto
+
+绝对定位和固定定位中，margin为auto时，会自动吸收剩余空间
+
+补充：
+绝对定位、固定定位元素一定是块盒
+绝对定位、固定定位元素一定不是浮动
+没有外边距合并
+
+<br>
+<br>
+
+
+      <div class="images clearfix">
+         <img src="img/demo.jpg">
+      </div>
+
+      <div style="height: 10rem;"></div>
+<hr>
+
+<br>
+<br>
+      <div class="images clearfix">
+         <img src="img/demo.jpg">
+      </div>
+      <div style="height: 10rem;"></div>
+<hr>
+
+<h2>基础快捷操作</h2>
+<p>
+选中点 -- Ctrl+右键，连点成线
+Shift + S -- Snap（吸附） 选中项到栅格点
+选中，Ctrl + L -- 选中所有几何体
+Ctrl + L （选中所有相邻元素 -- 缝合边）沿法线挤出 -- Alt + E （均等偏移）， 
+Ctrl + Tab -- 选择模式
+Ctrl + Alt + 点击 --选取相同方向上的同一元素
+</p>
+倒角 --
+Ctrl + B（边线），  Shift + Ctrl +B   （顶点）
+
+Shift + Tab -- 吸附
+
+Shift + R -- 重复操作
+
+倒角不均 -- 物体模式，ctrl +A ，全部变换 --均匀
+
+正在建造的曲面，例如机动游艇的船体，通常由多个称为 NURBS面片（或简称为面片）的 NURBS 曲面组成。这些表面补丁应该以边界不可见的方式安装在一起。这在数学上用几何连续性的概念来表达。
+
+更高级别的工具受益于 NURBS 的能力，可以创建和建立不同级别的几何连续性：
+只要两条曲线或曲面的终点位置重合，位置连续性(G0) 就成立。曲线或曲面可能仍然以一定角度相交，从而产生尖角或边缘并导致高光断裂。
+切向连续性(G¹) 要求曲线或曲面的末端向量平行且指向相同，排除锐边。因为落在切向连续边缘上的高光始终是连续的，因此看起来很自然，所以这种级别的连续性通常就足够了。
+曲率连续性(G²) 进一步要求端向量具有相同的长度和长度变化率。落在曲率（弧线变化的速率）连续边上的高光不会显示任何变化，从而使两个表面看起来像一个表面。这可以在视觉上识别为“完美光滑”。这种级别的连续性在创建需要许多双三次面片组成一个连续表面的模型时非常有用。
+
+几何连续性主要是指生成的表面的形状；由于 NURBS 曲面是函数，因此还可以讨论曲面关于参数的导数。这称为参数连续性。给定度数的参数连续性意味着该度数的几何连续性。
+第一级和第二级参数连续性（C0和 C¹）实际上与位置和切向（G0和 G¹）连续性相同。然而，第三级参数连续性 (C²) 不同于曲率连续性，因为它的参数化也是连续的。实际上，如果使用均匀 B 样条，则更容易实现 C² 连续性。
+Cn连续性的定义要求相邻曲线/曲面的n次导数 在关节处相等。请注意，曲线和曲面的（偏）导数是具有方向和大小的向量；两者应该相等。
+<br>
+
+<br>
+
+<h2>基础快捷操作</h2>
+<p>
+选中点 -- Ctrl+右键，连点成线
+Shift + S -- Snap（吸附） 选中项到栅格点
+选中，Ctrl + L -- 选中所有几何体
+Ctrl + L （选中所有相邻元素 -- 缝合边）沿法线挤出 -- Alt + E （均等偏移）， 
+Ctrl + Tab -- 选择模式
+Ctrl + Alt + 点击 --选取相同方向上的同一元素
+</p>
+倒角 --
+Ctrl + B（边线），  Shift + Ctrl +B   （顶点）
+
+Shift + Tab -- 吸附
+
+Shift + R -- 重复操作
+
+倒角不均 -- 物体模式，ctrl +A ，全部变换 --均匀
+
+正在建造的曲面，例如机动游艇的船体，通常由多个称为 NURBS面片（或简称为面片）的 NURBS 曲面组成。这些表面补丁应该以边界不可见的方式安装在一起。这在数学上用几何连续性的概念来表达。
+
+更高级别的工具受益于 NURBS 的能力，可以创建和建立不同级别的几何连续性：
+只要两条曲线或曲面的终点位置重合，位置连续性(G0) 就成立。曲线或曲面可能仍然以一定角度相交，从而产生尖角或边缘并导致高光断裂。
+切向连续性(G¹) 要求曲线或曲面的末端向量平行且指向相同，排除锐边。因为落在切向连续边缘上的高光始终是连续的，因此看起来很自然，所以这种级别的连续性通常就足够了。
+曲率连续性(G²) 进一步要求端向量具有相同的长度和长度变化率。落在曲率（弧线变化的速率）连续边上的高光不会显示任何变化，从而使两个表面看起来像一个表面。这可以在视觉上识别为“完美光滑”。这种级别的连续性在创建需要许多双三次面片组成一个连续表面的模型时非常有用。
+
+几何连续性主要是指生成的表面的形状；由于 NURBS 曲面是函数，因此还可以讨论曲面关于参数的导数。这称为参数连续性。给定度数的参数连续性意味着该度数的几何连续性。
+第一级和第二级参数连续性（C0和 C¹）实际上与位置和切向（G0和 G¹）连续性相同。然而，第三级参数连续性 (C²) 不同于曲率连续性，因为它的参数化也是连续的。实际上，如果使用均匀 B 样条，则更容易实现 C² 连续性。
+Cn连续性的定义要求相邻曲线/曲面的n次导数 在关节处相等。请注意，曲线和曲面的（偏）导数是具有方向和大小的向量；两者应该相等。
+</div>
+<div style="height: 3rem;"></div>
+
+</section>
+
+
+<section class="select clearfix">
+<div class="selectcontainer clearfix">
+
+   <div class="previous left">
+      <a href="https://www.douban.com">
+      <img src="img/icon/arrow-left.svg" class="left clearfix">
+      <div class="right clearfix">
+      <p style="margin-left: 15px; font-size: 15px;">Previous</p>
+      <p style="margin-left: 15px; font-size: 45px;">ABCD</p>
+      </div>
+      </a>
+   </div>
+
+
+   <div class="next right">
+      <a href="https://www.gcores.com">
+      <img src="img/icon/arrow-right.svg" class="right clearfix">
+      <div class="left clearfix">
+      <p style="margin-right: 15px; font-size: 15px;">Next</p>
+      <p style="margin-right: 15px; font-size: 45px;">EFGH</p>
+      </div>
+      </a>   
+   </div>
+</div>
+
+</section>
+</div>
+</body>
+
+
+<footer>
+      <div class="container clearfix">
+         <div class="copyright left">
+            <p>
+               @ 2024 Elena Cao
+            </p>
+         </div>
+         <div class="contact right">
+            <ul>
+               <li><a href=""><svg class="icon" aria-hidden="true"><use xlink:href="#icon-instagram"></use></svg></a></li>
+               <li><a href=""><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat"></use></svg></a></li>
+               <li><a href=""><svg class="icon" aria-hidden="true"><use xlink:href="#icon-behance-square"></use></svg></a></li>
+               <li><a href=""><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail"></use></svg></a></li>
+            </ul>           
+         </div>
+      </div>
+</footer> 
+
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+       var header = document.querySelector("header");
+       header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+
+
+</html>
